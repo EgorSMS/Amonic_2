@@ -28,32 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.fromlabel = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.tolabel = new System.Windows.Forms.Label();
+            this.label = new System.Windows.Forms.Label();
+            this.dateBox = new System.Windows.Forms.TextBox();
+            this.flnumberBox = new System.Windows.Forms.TextBox();
+            this.sortBy = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.toBox = new System.Windows.Forms.ComboBox();
+            this.fromBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // fromlabel
             // 
-            this.label1.Font = new System.Drawing.Font("TeX Gyre Adventor", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(12, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "From";
+            this.fromlabel.Font = new System.Drawing.Font("TeX Gyre Adventor", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.fromlabel.Location = new System.Drawing.Point(12, 51);
+            this.fromlabel.Name = "fromlabel";
+            this.fromlabel.Size = new System.Drawing.Size(93, 33);
+            this.fromlabel.TabIndex = 0;
+            this.fromlabel.Text = "From";
             // 
             // label2
             // 
@@ -71,74 +71,58 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(156, 33);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Flight Number";
+            this.label3.Text = "Flight number";
             // 
-            // label4
+            // tolabel
             // 
-            this.label4.Font = new System.Drawing.Font("TeX Gyre Adventor", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(356, 51);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 37);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "To";
+            this.tolabel.Font = new System.Drawing.Font("TeX Gyre Adventor", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tolabel.Location = new System.Drawing.Point(356, 51);
+            this.tolabel.Name = "tolabel";
+            this.tolabel.Size = new System.Drawing.Size(93, 37);
+            this.tolabel.TabIndex = 3;
+            this.tolabel.Text = "To";
             // 
-            // label5
+            // label
             // 
-            this.label5.Font = new System.Drawing.Font("TeX Gyre Adventor", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(619, 51);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 33);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Sort by";
+            this.label.Font = new System.Drawing.Font("TeX Gyre Adventor", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label.Location = new System.Drawing.Point(619, 51);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(93, 33);
+            this.label.TabIndex = 4;
+            this.label.Text = "Sort by";
             // 
-            // comboBox1
+            // dateBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(113, 59);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(142, 24);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.dateBox.Location = new System.Drawing.Point(131, 136);
+            this.dateBox.Name = "dateBox";
+            this.dateBox.Size = new System.Drawing.Size(123, 22);
+            this.dateBox.TabIndex = 6;
             // 
-            // textBox1
+            // flnumberBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(131, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 22);
-            this.textBox1.TabIndex = 6;
+            this.flnumberBox.Location = new System.Drawing.Point(518, 136);
+            this.flnumberBox.Name = "flnumberBox";
+            this.flnumberBox.Size = new System.Drawing.Size(123, 22);
+            this.flnumberBox.TabIndex = 8;
             // 
-            // comboBox2
+            // sortBy
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(409, 56);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(142, 24);
-            this.comboBox2.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(509, 136);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(123, 22);
-            this.textBox2.TabIndex = 8;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(718, 56);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(142, 24);
-            this.comboBox3.TabIndex = 9;
+            this.sortBy.FormattingEnabled = true;
+            this.sortBy.Location = new System.Drawing.Point(718, 56);
+            this.sortBy.Name = "sortBy";
+            this.sortBy.Size = new System.Drawing.Size(142, 24);
+            this.sortBy.TabIndex = 9;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("TeX Gyre Adventor", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(718, 121);
+            this.button1.Location = new System.Drawing.Point(760, 124);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 43);
+            this.button1.Size = new System.Drawing.Size(100, 41);
             this.button1.TabIndex = 10;
             this.button1.Text = "Apply";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -160,6 +144,7 @@
             this.button2.TabIndex = 12;
             this.button2.Text = "Cancel Flight";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -181,6 +166,23 @@
             this.button4.TabIndex = 14;
             this.button4.Text = "Import Changes";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // toBox
+            // 
+            this.toBox.FormattingEnabled = true;
+            this.toBox.Location = new System.Drawing.Point(409, 56);
+            this.toBox.Name = "toBox";
+            this.toBox.Size = new System.Drawing.Size(142, 24);
+            this.toBox.TabIndex = 7;
+            // 
+            // fromBox
+            // 
+            this.fromBox.FormattingEnabled = true;
+            this.fromBox.Location = new System.Drawing.Point(113, 59);
+            this.fromBox.Name = "fromBox";
+            this.fromBox.Size = new System.Drawing.Size(142, 24);
+            this.fromBox.TabIndex = 5;
             // 
             // Form1
             // 
@@ -192,16 +194,16 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.sortBy);
+            this.Controls.Add(this.flnumberBox);
+            this.Controls.Add(this.toBox);
+            this.Controls.Add(this.dateBox);
+            this.Controls.Add(this.fromBox);
+            this.Controls.Add(this.label);
+            this.Controls.Add(this.tolabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.fromlabel);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -212,21 +214,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label fromlabel;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label tolabel;
+        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.TextBox dateBox;
+        private System.Windows.Forms.TextBox flnumberBox;
+        private System.Windows.Forms.ComboBox sortBy;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.ComboBox toBox;
+        private System.Windows.Forms.ComboBox fromBox;
     }
 }
 

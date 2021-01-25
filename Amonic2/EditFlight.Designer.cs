@@ -32,11 +32,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateBox = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.timeBox = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.priceBox = new System.Windows.Forms.TextBox();
             this.updateButton = new System.Windows.Forms.Button();
             this.cancelButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -77,12 +77,12 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Date:";
             // 
-            // dateTimePicker1
+            // dateBox
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(142, 238);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 4;
+            this.dateBox.Location = new System.Drawing.Point(142, 238);
+            this.dateBox.Name = "dateBox";
+            this.dateBox.Size = new System.Drawing.Size(200, 22);
+            this.dateBox.TabIndex = 4;
             // 
             // label5
             // 
@@ -93,13 +93,13 @@
             this.label5.TabIndex = 5;
             this.label5.Text = "Time:";
             // 
-            // dateTimePicker2
+            // timeBox
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(545, 238);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(124, 22);
-            this.dateTimePicker2.TabIndex = 6;
-            this.dateTimePicker2.Value = new System.DateTime(2021, 1, 24, 21, 51, 0, 0);
+            this.timeBox.Location = new System.Drawing.Point(545, 227);
+            this.timeBox.Name = "timeBox";
+            this.timeBox.Size = new System.Drawing.Size(124, 22);
+            this.timeBox.TabIndex = 6;
+            this.timeBox.Value = new System.DateTime(2021, 1, 24, 21, 51, 0, 0);
             // 
             // label6
             // 
@@ -110,12 +110,12 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Economy price:";
             // 
-            // textBox1
+            // priceBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(946, 229);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 8;
+            this.priceBox.Location = new System.Drawing.Point(946, 229);
+            this.priceBox.Name = "priceBox";
+            this.priceBox.Size = new System.Drawing.Size(100, 22);
+            this.priceBox.TabIndex = 8;
             // 
             // updateButton
             // 
@@ -126,6 +126,7 @@
             this.updateButton.TabIndex = 9;
             this.updateButton.Text = "Update";
             this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // cancelButton
             // 
@@ -145,11 +146,11 @@
             this.ClientSize = new System.Drawing.Size(1086, 583);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.updateButton);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.priceBox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.timeBox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -167,11 +168,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker timeBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox priceBox;
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Button cancelButton;
     }

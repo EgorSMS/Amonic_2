@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplySchedules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplySchedules.Designer.cs">
+      <DependentUpon>ApplySchedules.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditFlight.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ApplySchedules.resx">
+      <DependentUpon>ApplySchedules.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditFlight.resx">
       <DependentUpon>EditFlight.cs</DependentUpon>
     </EmbeddedResource>
